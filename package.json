@@ -2,7 +2,12 @@
   "name": "@state/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start host": "nx serve host",
+    "start ngrx": "nx serve ngrx",
+    "start ngxs": "nx serve ngxs",
+    "start akita": "nx serve akita"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~19.2.0",
@@ -54,8 +59,14 @@
     "@angular/platform-browser": "~19.2.0",
     "@angular/platform-browser-dynamic": "~19.2.0",
     "@angular/router": "~19.2.0",
+    "@nx/angular": "^20.5.0",
+    "@taiga-ui/cdk": "^4.28.0",
+    "@taiga-ui/core": "^4.28.0",
+    "@taiga-ui/event-plugins": "^4.0.2",
+    "@taiga-ui/icons": "^4.28.0",
+    "@taiga-ui/kit": "^4.28.0",
     "rxjs": "~7.8.0",
-    "zone.js": "~0.15.0",
-    "@nx/angular": "^20.5.0"
+    "scss-reset": "^1.4.6",
+    "zone.js": "~0.15.0"
   }
 }

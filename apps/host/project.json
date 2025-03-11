@@ -23,7 +23,11 @@
             "input": "apps/host/public"
           }
         ],
-        "styles": ["apps/host/src/styles.scss"],
+        "styles": [
+          "apps/host/src/styles.scss",
+          "@taiga-ui/core/styles/taiga-ui-theme.less",
+          "@taiga-ui/core/styles/taiga-ui-fonts.less"
+        ],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/host/webpack.config.ts"

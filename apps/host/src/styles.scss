@@ -1,17 +1,1 @@
-@use 'scss-reset';
-@use './fonts/fonts';
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4; /* цвет фона */
-}
-* {
-  font-family: 'Source Code Pro', sans-serif;
-}
+@use 'libs/src/lib/styles/base';

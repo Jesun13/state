@@ -5,6 +5,15 @@
   "prefix": "app",
   "sourceRoot": "apps/ngxs/src",
   "tags": [],
+  "generators": {
+    "@schematics/angular:component": {
+      "style": "scss",
+      "prefix": "ngxs",
+      "changeDetection": "OnPush",
+      "skipTests": true,
+      "inlineTemplate": true
+    }
+  },
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",

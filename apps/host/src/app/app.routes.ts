@@ -4,7 +4,7 @@ import { MainComponent } from '../pages/main/main.component';
 export const appRoutes: Route[] = [
   {
     path: 'ngxs',
-    loadChildren: () => import('ngxs/Routes').then((m) => m!.remoteRoutes),
+    loadChildren: () => import('ngxs/Routes').then((m) => m!.appRoutes),
   },
   {
     path: 'akita',

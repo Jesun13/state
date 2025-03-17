@@ -1,9 +1,9 @@
 import { Route } from '@angular/router';
+import { MainComponent } from '../pages/main/main.component';
 
 export const appRoutes: Route[] = [
   {
     path: '',
-    loadChildren: () =>
-      import('./remote-entry/entry.routes').then((m) => m.remoteRoutes),
+    component: MainComponent,
   },
 ];

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +13,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/core": "~19.2.0",
     "@ngxs/store": "^19.0.0"
   }
 }

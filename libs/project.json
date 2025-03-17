@@ -1,0 +1,29 @@
+{
+  "name": "libs",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "generators": {
+    "@schematics/angular:component": {
+      "style": "scss",
+      "prefix": "lib",
+      "changeDetection": "OnPush",
+      "skipTests": true,
+      "inlineTemplate": true
+    }
+  },
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

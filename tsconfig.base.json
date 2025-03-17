@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@state/libs": ["libs/src/index.ts"],
       "akita/Routes": ["apps/akita/src/app/remote-entry/entry.routes.ts"],
       "ngrx/Routes": ["apps/ngrx/src/app/remote-entry/entry.routes.ts"],
       "ngxs/Routes": ["apps/ngxs/src/app/remote-entry/entry.routes.ts"]
